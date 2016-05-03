@@ -7,7 +7,7 @@ with open('names.txt') as f:
 
 stripped = []
 for name in content:
-	stripped.append(name.rstrip())
+    stripped.append(name.rstrip())
 
 print (stripped)
 
@@ -17,12 +17,13 @@ end = 2015
 namedict = defaultdict(list)
 
 def findYears(name):
-	yrs = []
-	for i in range(start, end):
-		f = open("data/yob" + str(i)+".txt", 'r')
-		if name in f.read():
-			yrs.append(i)
-	return yrs
+    yrs = []
+    for i in range(start, end):
+        f = open("data/yob" + str(i)+".txt", 'r')
+        if name in f.read():
+            yrs.append(i)
+    return yrs
 
 for name in stripped:
-	print(findYears(name))
+    print(findYears(name))
+    break
