@@ -1,6 +1,5 @@
 import sys
 from collections import defaultdict
-import matplotlib.pyplot as plt
 
 with open('names.txt') as f:
     content = f.readlines()
